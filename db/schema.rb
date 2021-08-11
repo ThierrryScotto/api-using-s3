@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_11_020844) do
+ActiveRecord::Schema.define(version: 2021_08_11_022327) do
+
+  create_table "client_files", force: :cascade do |t|
+    t.string "name"
+    t.string "id_client"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "clients", force: :cascade do |t|
     t.string "name"

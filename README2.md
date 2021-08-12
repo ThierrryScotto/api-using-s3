@@ -1,7 +1,12 @@
--> Client (Criar) (name, password, id)
-    * salvo no banco e é preciso de autenticar para mandar o file
--> Criar ClientFile (nameFile, idClient) 
-    * (O arquivo será salvo com o ID do cliente e o nome que o usuário disponibilizar)
+- Client (Criar) (name, password, id) V
+    * salvo no banco V
+- Criar ClientFile (nameFile, idClient) V
+    * O arquivo será salvo com o ID dele, o nome dele e o id do cliente (1_test.pdf_2) V
 
--> Criar a Autenticação
--> Criar os testes
+- Por o s3 para salbar e pegar as infoirmações
+    * implementar .env
+    * Implementar o s3
+    * testar pegars os files
+    * testar enviar os files
+- Criar a Autenticação
+- Criar os testes
